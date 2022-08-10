@@ -29,7 +29,7 @@ function SendJSON(){
 // Копирование в буфер обмена готовой ссылки
 function Copy(){
   const elem = document.getElementById('answer').value
-  if (elem != undefined) {
+  if (elem != undefined && elem != 'Field is empty') {
     navigator.clipboard.writeText(elem)
     alert('Вы скопирорвали ссылку: ' + elem)
   }
